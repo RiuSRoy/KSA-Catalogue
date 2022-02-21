@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-function Card(props) {
+function Footer(props) {
   return (
     <div className='max-w-sm rounded overflow-hidden shadow-lg'>
         <img src="https://source.unsplash.com/random" alt='Viral' className='w-full' />
@@ -9,4 +9,4 @@ function Card(props) {
   )
 }
 
-export default Card;
+export default Footer;
