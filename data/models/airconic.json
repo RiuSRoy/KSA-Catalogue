@@ -1,10 +1,16 @@
 {
     "id": 1,
     "name" : "airconic",
-    "description": "Meet Airconic, our lightest hardside suitcase so far! Weighing only 3.2 kg for the large Spinner, its weight is really incredible. American Tourister is demonstrating again its strength for innovative lightweight suitcases paired with a contemporary design language. The 360° line design gives a modern and dynamic touch to the suitcase, while the double wheels, ergonomic handles and recessed TSA Lock make sure you can travel in all comfort. Airconic comes in 5 striking colours: go bold with Purist Blue or Living Coral or go for a more timeless colour version. No matter which one you choose, be assured that you’ll travel lighter than ever.",
+    "description": [
+      "Meet Airconic, our lightest hardside suitcase so far! Weighing only 3.2 kg for the large Spinner, its weight is really incredible. American Tourister is demonstrating again its strength for innovative lightweight suitcases paired with a contemporary design language.",
+      "The 360° line design gives a modern and dynamic touch to the suitcase, while the double wheels, ergonomic handles and recessed TSA Lock make sure you can travel in all comfort.",
+      "Airconic comes in 3 colours: choose that matches your style statement.",
+      "No matter which one you choose, be assured that you’ll travel lighter than ever."
+    ],
     "primaryImageWidth": 1000,
     "primaryImageHeight": 1000,
     "mrp": ["7,250","9,050","10,850"],
     "rrp": ["55", "67", "77"],
-    "size": ["55", "67", "77"]
+    "size": ["55", "67", "77"],
+    "brand": "amt"
   }

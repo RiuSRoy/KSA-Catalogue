@@ -60,8 +60,20 @@ export default function CardSlider(props) {
         case "kross": 
         colorData = [
           {
-            "color":"green", 
-            "number": 1
+            "color":"spring green", 
+            "number": 4
+          },
+          {
+            "color":"formula red", 
+            "number": 2
+          },
+          {
+            "color":"dark slate", 
+            "number": 4
+          },
+          {
+            "color":"dark red", 
+            "number": 4
           }
         ]
         break;
@@ -86,6 +98,14 @@ export default function CardSlider(props) {
             {
               "color":"coral blue", 
               "number": 3
+            },
+            {
+              "color":"black", 
+              "number": 8
+            },
+            {
+              "color":"red", 
+              "number": 7
             }
           ]
         default:
@@ -94,7 +114,7 @@ export default function CardSlider(props) {
       let content = [];
       colorData.map((data) => {
         content.push(
-            <div className="block mx-auto bg-white rounded-3xl max-w-xs text-black my-8 border-solid border-4 border-black drop-shadow-2xl">
+            <div className="block mx-auto bg-white bg-opacity-70 rounded-3xl max-w-xs text-black my-8 border-solid border-4 border-black shadow-2xl">
               <h2 className="text-center text-3xl capitalize my-5 p-5">{modelName} {data.color}</h2>
               <Slider {...settings}>
                 {getPhotosForColor(data.color, data.number)}
@@ -105,8 +125,8 @@ export default function CardSlider(props) {
       return content;
     }
     return (
-      <>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         {getAllPhotos(modelName)}
-      </>   
+      </div>   
     );
 }

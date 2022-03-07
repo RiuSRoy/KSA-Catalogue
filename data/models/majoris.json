@@ -1,10 +1,13 @@
 {
     "id": 5,
     "name" : "majoris",
-    "description": "The lightest ever",
+    "description": [
+      
+    ],
     "primaryImageWidth": 200,
     "primaryImageHeight": 412,
     "mrp": ["7,250","9,050","10,850"],
     "rrp": ["55", "67", "77"],
-    "size": ["55", "67", "77"]
+    "size": ["55", "67", "77"],
+    "brand": "amt"
   }

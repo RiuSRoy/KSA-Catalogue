@@ -1,10 +1,17 @@
 {
     "id": 3,
     "name" : "zakk",
-    "description": "Our Best Seller",
+    "description": [
+      "UTLTRA-LIGHTWEIGHT",
+      "SCRATCH RESISTANT ON DUAL TEXTURE",
+      "360 DEGREE SPINNER WHEELS",
+      "ANTI-THEFT ZIPPER & 3 DIGIT COMBI LOCK",
+      "HIGH DURABILITY & BIG CAPACITY"
+    ],
     "primaryImageWidth": 250,
     "primaryImageHeight": 416,
-    "mrp": ["7,250","9,050","10,850"],
-    "rrp": ["55", "67", "77"],
-    "size": ["55", "67", "77"]
+    "mrp": ["7,250","9,050","11,500"],
+    "rrp": ["55", "67", "4,580"],
+    "size": ["55", "67", "79"],
+    "brand": "kam"
   }
