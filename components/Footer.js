@@ -1,11 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from "../styles/Home.module.css"
 
 function Footer(props) {
   return (
-    <div className='max-w-sm rounded overflow-hidden shadow-lg'>
-        <img src="https://source.unsplash.com/random" alt='Viral' className='w-full' />
-    </div>
+    <footer className={styles.footer}>
+      Powered by{' '}
+      <span className={styles.logo}>
+        <Image src="/TK.svg" alt="TK Logo" width={72} height={16} />
+      </span>
+  </footer>
   )
 }
 

@@ -1,11 +1,14 @@
+import Link from 'next/link';
 import React from 'react';
+import styles from "../../styles/Home.module.css"
+import Image from 'next/image';
 
 class Catalogue extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            models = []
+            models: []
         };
     }
 
@@ -21,14 +24,18 @@ class Catalogue extends React.Component {
 
     render() {
         return (<>
+            <h2 className='text-xl text-center p-12'>Click on the model you like to know more...</h2>
             <div className={styles.grid}>
                 {
-                    this.state.models.map((model) => {
-                        <a href={`/catalogue/${item.name}`} className={styles.card}>
-                            <h2>{item.name}</h2>
-                            
-                            <p>{item.description}</p>
-                        </a>
+                    this.state.models.map(model => {
+                        return (
+                            <Link href={`/catalogue/${model.name}`} key={model.id} passHref>
+                                <div className={styles.card} >
+                                    <h2 className='uppercase text-center cursor-pointer'>{model.name}</h2>
+                                    <Image src={`/${model.name}.png`} width={model.primaryImageWidth} height={model.primaryImageHeight} alt={model.name} />
+                                </div>
+                            </Link>
+                        );
                     })
                 }
             </div>

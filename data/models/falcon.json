@@ -1,0 +1,10 @@
+{
+    "id": 4,
+    "name" : "falcon",
+    "description": "The lightest ever",
+    "primaryImageWidth": 250,
+    "primaryImageHeight": 416,
+    "mrp": ["7,250","9,050","10,850"],
+    "rrp": ["55", "67", "77"],
+    "size": ["55", "67", "77"]
+  }

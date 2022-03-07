@@ -1,0 +1,10 @@
+{
+    "id": 2,
+    "name" : "kross",
+    "description": "The lightest ever",
+    "primaryImageWidth": 300,
+    "primaryImageHeight": 450,
+    "mrp": ["7,250","9,050","10,850"],
+    "rrp": ["55", "67", "77"],
+    "size": ["55", "67", "77"]
+  }

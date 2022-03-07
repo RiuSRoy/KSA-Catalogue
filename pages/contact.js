@@ -1,27 +1,30 @@
 import React from 'react';
+import styles from "../styles/Home.module.css"
 
 const contact = () => {
-    return <div className="block m-auto">
-        <h2> A legacy built on trust </h2>
-        <h5>Distributor of American Tourister, Duckback and Ketron (Electric Scooter) for the entire North-East region </h5>
-        <p> Delivering high quality products & service since 1968! </p>
-        
-        </hr>
+    return (<div className="mx-auto block text-center text-xl max-w-5xl my-8">
+        <h2 className="font-extralight text-3xl"> A legacy built on trust </h2>
+        <br/>
+        <h5 className=''>Established in 1960s, we are the distributor of American Tourister, Duckback and Ketron (Electric Scooter) for the entire North-East region </h5>
+        <br/>
+        <p className="mb-10 italic text-2xl"> Delivering high quality products & service since 1968! </p>
         <div className={styles.grid}>
             <div className={styles.card}>
-                <h2>CONTACT</h2>
+                <h2 className="py-8">CONTACT</h2>
                 <p>Email: ksaworld1968@gmail.com</p>
-                <p>Phone1: 9085328111</p>
-                <p>Phone2: 9435117480</p>
+                <br/>
+                <p>Phone1: +91-9085328111</p>
+                <p>Phone2: +91-9435117480</p>
             </div>
             <div className={styles.card}>
-                <h2>LOCATION</h2>
-                <p>Retail Showroom: Kamakhya Stores & Agency, SS Road, Lakhtokia, Guwahati, Assam - 781001
+                <h2 className="py-8">LOCATION</h2>
+                <p>Retail Showroom: Kamakhya Stores & Agency, SS Road, Lakhtokia, Guwahati, Assam - 781001</p>
+                <br/>
                 <p>Warehouse: H.M. Das Road, Rehabari, Guwahati, Assam - 781008</p>
             </div>
         </div>
-        
-    </div>;
+
+    </div>);
 }
 
 export default contact;
