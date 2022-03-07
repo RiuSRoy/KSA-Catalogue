@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import styles from "../styles/Home.module.css"
+import { faPhone, faMailBulk, faWarehouse } from '@fortawesome/free-solid-svg-icons'
 
 const contact = () => {
     return (<div className="mx-auto block text-center text-xl max-w-5xl my-8">
@@ -13,15 +14,18 @@ const contact = () => {
             <div className={styles.card}>
                 <h2 className="py-8">CONTACT</h2>
                 <p>Email: ksaworld1968@gmail.com</p>
+                <FontAwesomeIcon icon={faMailBulk} className="w-12 h-12 m-6"/>
                 <br/>
                 <p>Phone1: +91-9085328111</p>
                 <p>Phone2: +91-9435117480</p>
+                <FontAwesomeIcon icon={faPhone} className="w-12 h-12 m-6"/>
             </div>
             <div className={styles.card}>
                 <h2 className="py-8">LOCATION</h2>
                 <p>Retail Showroom: Kamakhya Stores & Agency, SS Road, Lakhtokia, Guwahati, Assam - 781001</p>
                 <br/>
                 <p>Warehouse: H.M. Das Road, Rehabari, Guwahati, Assam - 781008</p>
+                <FontAwesomeIcon icon={faWarehouse} className="w-12 h-12 m-6"/>
             </div>
         </div>
 
