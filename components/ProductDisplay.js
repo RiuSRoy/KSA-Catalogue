@@ -4,9 +4,6 @@ import Image from 'next/image';
 
 const ProductDisplay = (props) => {
     const { models } = props;
-    // const { modelId } = props;
-    // const { imgWidth } = props;
-    // const { imgHeight } = props;
     const { brand } = props;
     const { brandName } = props;
     return (
@@ -28,6 +25,12 @@ const ProductDisplay = (props) => {
             </div>
         </>
     )
+};
+
+export async function getServerSideProps(context) {
+    return {
+        props: {ha}
+    }
 }
 
 export default ProductDisplay;

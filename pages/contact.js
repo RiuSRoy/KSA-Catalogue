@@ -4,12 +4,13 @@ import styles from "../styles/Home.module.css"
 import { faPhone, faMailBulk, faWarehouse } from '@fortawesome/free-solid-svg-icons'
 
 const contact = () => {
-    return (<div className="mx-auto block text-center text-xl max-w-5xl my-8">
+    return (<div className="mx-auto block text-center text-xl max-w-5xl my-8 px-3 space-y-10">
+        <h2 className="text-4xl font-extrabold uppercase">Kamakhya Stores & Agency</h2>
         <h2 className="font-extralight text-3xl"> A legacy built on trust </h2>
         <br/>
-        <h5 className=''>Established in 1960s, we are the distributor of American Tourister, Duckback and Ketron (Electric Scooter) for the entire North-East region </h5>
+        <h5>Established in 1960s, we are the distributor of American Tourister, Duckback and Ketron (Electric Scooter) for the entire North-East region </h5>
         <br/>
-        <p className="mb-10 italic text-2xl"> Delivering high quality products & service since 1968! </p>
+        <p className="italic text-2xl text-white">Delivering high quality products & service since 1968! </p>
         <div className={styles.grid}>
             <div className={styles.card}>
                 <h2 className="py-8">CONTACT</h2>

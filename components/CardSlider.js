@@ -45,6 +45,18 @@ export default function CardSlider(props) {
           }
         ];
         break;
+        case "enwrap" : 
+        colorData = [
+          {
+            "color":"black", 
+            "number": 6
+          },
+          {
+            "color":"silver", 
+            "number": 5
+          }
+        ];
+        break;
         case "falcon": 
         colorData = [
           {

@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   <div className="bg-[url('../images/Background.jpeg')] bg-fixed">
     <NavBar/>
     <Component {...pageProps}/>
-    <Link href="https://wa.me/919085328111" passHref>
+    <Link href={`https://wa.me/919085328111?text=urlencodedtext`} passHref>
       <FontAwesomeIcon icon={faWhatsapp} className="absolute top-3 right-3 h-16 w-16 animate-bounce cursor-pointer"/>
     </Link>
   </div>

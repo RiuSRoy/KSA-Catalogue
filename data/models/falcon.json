@@ -1,11 +1,11 @@
 {
     "id": 4,
     "name" : "falcon",
-    "description": "The lightest ever",
+    "description": "Locking mechanism TSA Lock,Number of wheels: 4,Body type,Material: Hard Body Polycarbonate,Capacity: 120L,Weight: 5kg",
     "primaryImageWidth": 250,
     "primaryImageHeight": 416,
-    "mrp": ["7,250","9,050","10,850"],
-    "rrp": ["55", "67", "77"],
+    "mrp": ["9,285","11,700","14,640"],
+    "rrp": ["3,250", "4,095", "5124"],
     "size": ["55", "67", "77"],
     "brand": "kam"
   }

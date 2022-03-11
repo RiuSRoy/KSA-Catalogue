@@ -1,11 +1,11 @@
 {
     "id": 2,
     "name" : "kross",
-    "description": "The lightest ever",
+    "description": "Locking mechanism Number Lock,Number of wheels: 4,Body type: Hard Body,Material: Polycarbonate,Capacity: 120L,Weight: 5kg",
     "primaryImageWidth": 300,
     "primaryImageHeight": 450,
-    "mrp": ["7,980","9,500","11,180"],
-    "rrp": ["3,990", "4,200", "5,589"],
-    "size": ["55", "68", "79"],
+    "mrp": ["8,580","10,180","11,980"],
+    "rrp": ["4,290", "5,090", "5990"],
+    "size": ["55", "67", "79"],
     "brand": "amt"
   }
