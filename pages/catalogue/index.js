@@ -6,11 +6,16 @@ const Catalogue = () => {
     const [models, setModels] = useState([]);
 
     useEffect(() => {
-        fetch(`/api/getModels`)
-        .then((res) => res.json())
-        .then((modelsResponse) => {
-            setModels(modelsResponse);
-        });
+        async function getModel() {
+            try {
+                const resp = await fetch("https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/index.json");
+                setModels(await resp.json());
+            } catch(e) {
+                console.log(e);
+                throw e;
+            }
+        }
+        getModel();
     }, []);
 
     return (<>

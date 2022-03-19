@@ -1,13 +1,12 @@
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import styles from "../styles/Home.module.css";
 import React from "react";
 import Slider from "react-slick";
 
 export default function CardSlider(props) {
   const {model} = props;
-  const {name, mrp, rrp, size} = model;
+  const {name} = model;
 
     const settings = {
       dots: true,
@@ -20,8 +19,8 @@ export default function CardSlider(props) {
     const getPhotosForColor = (color, numberOfPhotos) => {
       let content = [];
       for (let i = 1; i <= numberOfPhotos; i++) {
-        content.push(<div className="text-center relative w-96 h-96">
-          <img src={`https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/${name}/${color}/${i}.png`} layout='fill' objectFit="contain" alt={name} className="center"/>
+        content.push(<div className={styles.slider}>
+          <img src={`https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/${name}/${color}/${i}.png`}/>
         </div>);
       }
       return content;
