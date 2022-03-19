@@ -26,10 +26,4 @@ const ProductDisplay = (props) => {
     )
 };
 
-export async function getServerSideProps(context) {
-    return {
-        props: {ha}
-    }
-}
-
 export default ProductDisplay;

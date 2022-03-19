@@ -1,33 +1,33 @@
-import React, { useState , useEffect } from 'react';
+import React from 'react';
 import CardSlider from '../../components/CardSlider';
 import PriceTag from '../../components/PriceTag';
-import { useRouter } from 'next/router';
 
-const ModelName = () => {
-    const {
-        query: { modelName }
-    } = useRouter();
+export async function getStaticPaths({params}) {
+    const resp = await fetch("https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/index.json");
+    const model = await resp.json();
 
-    const [model, setModel] = useState(null);
-
-    useEffect(() => {
-        async function getModeldata() {
-            const modelNameInUrl = modelName.replace(/\s/g, '+')
-            const resp = await fetch(`https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/models/${modelNameInUrl}.json`);
-            setModel(await resp.json());
-        }
-        if(modelName) {
-            getModeldata();
-        }
-    }, [modelName])
-
-    if(!model) {
-        return null;
+    return {
+        paths: model.map((model) => ({
+            params: {modelName: model.name.toString() }
+        })),
+        fallback: false
     }
+}
 
+export async function getStaticProps({params}) {
+    const modelNameInUrl = params.modelName.replace(/\s/g, '+')
+    const resp = await fetch(`https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/models/${modelNameInUrl}.json`);
+    return {
+        props: {
+            model: await resp.json()
+        }
+    }
+}
+
+const ModelName = ({model}) => {
     return (
         <>
-            <h2 className="text-center uppercase font-black p-8 text-5xl">{modelName}</h2>
+            <h2 className="text-center uppercase font-black p-8 text-5xl">{model.name}</h2>
             <PriceTag mrp={model.mrp} rrp={model.rrp} size={model.size}/>
             <CardSlider model={model} />
             <div className='bg-black text-stone-300 mt-8'>
