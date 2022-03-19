@@ -30,7 +30,7 @@ const ModelName = ({model}) => {
             <h2 className="text-center uppercase font-black p-8 text-5xl">{model.name}</h2>
             <PriceTag mrp={model.mrp} rrp={model.rrp} size={model.size}/>
             <CardSlider model={model} />
-            <div className='bg-black text-stone-300 mt-8'>
+            <div className='bg-amber-500 mt-8'>
                 <p className='m-auto block max-w-5xl p-10 text-xl'>
                     {model.description}
                 </p>

@@ -7,7 +7,7 @@ const ProductDisplay = (props) => {
     const { brandName } = props;
     return (
         <>
-            <h2 className="text-center text-4xl my-8 font-extrabold">{brandName}</h2>
+            <h2 className="text-center text-4xl my-8 font-extrabold" id={brand}>{brandName}</h2>
             <div className={styles.grid}>
                 {
                     models.filter(item => item.brand == brand).map(model => {

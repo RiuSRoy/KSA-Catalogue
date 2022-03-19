@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "airconic",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/airconic/red/1.png",
+        "brand": "amt"
+    },
+    {
+        "id": 2,
+        "name": "enwrap",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/enwrap/silver/1.png",
+        "brand": "sam"
+    },
+    {
+        "id": 3,
+        "name": "evoa tech",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/evoa+tech/black/1.png",
+        "brand": "sam"
+    },
+    {
+        "id": 4,
+        "name": "evoa",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/evoa/black/1.png",
+        "brand": "sam"
+    },
+    {
+        "id": 5,
+        "name": "falcon",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/falcon/blue/1.png",
+        "brand": "kam"
+    },
+    {
+        "id": 6,
+        "name": "hartlan",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/hartlan/navy/1.png",
+        "brand": "sam"
+    },
+    {
+        "id": 7,
+        "name": "kross plus",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/kross+plus/spring+green/1.png",
+        "brand": "amt"
+    },
+    {
+        "id": 8,
+        "name": "majoris",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/majoris/coral/1.png",
+        "brand": "amt"
+    },
+    {
+        "id": 9,
+        "name": "sbl richmond ii",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/sbl+richmond+ii/brown/1.png",
+        "brand": "sam"
+    },
+    {
+        "id": 10,
+        "name": "varro",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/varro/peacock+blue/1.png",
+        "brand": "sam"
+    },
+    {
+        "id": 11,
+        "name": "zakk",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/zakk/coral+blue/1.png",
+        "brand": "kam"
+    },
+    {
+        "id": 12,
+        "name": "minter",
+        "imgUrl": "https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/minter/navy/1.png",
+        "brand": "sam"
+    }
+]
