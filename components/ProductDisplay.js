@@ -1,6 +1,5 @@
 import styles from "../styles/Home.module.css"
 import Link from 'next/link';
-import Image from 'next/image';
 
 const ProductDisplay = (props) => {
     const { models } = props;
@@ -16,7 +15,7 @@ const ProductDisplay = (props) => {
                             <Link href={`/catalogue/${model.name}`} key={model.id} passHref>
                                 <div className={styles.card} >
                                     <h2 className='uppercase text-center cursor-pointer'>{model.name}</h2>
-                                    <Image src={`/${model.name}.png`} width={model.primaryImageWidth} height={model.primaryImageHeight} alt={model.name} />
+                                    <img src={model.imgUrl} alt={model.name} />
                                 </div>
                             </Link>
                         );

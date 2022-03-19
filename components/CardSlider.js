@@ -4,10 +4,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 import React from "react";
 import Slider from "react-slick";
-import Image from 'next/image'
 
 export default function CardSlider(props) {
-  const {modelName} = props;
+  const {model} = props;
+  const {name, mrp, rrp, size} = model;
+
     const settings = {
       dots: true,
       infinite: true,
@@ -20,114 +21,19 @@ export default function CardSlider(props) {
       let content = [];
       for (let i = 1; i <= numberOfPhotos; i++) {
         content.push(<div className="text-center relative w-96 h-96">
-          <Image src={`/images/${modelName}/${color}/${i}.png`} layout='fill' objectFit="contain" alt={modelName}/>
+          <img src={`https://luggage-models-ksa.s3.ap-south-1.amazonaws.com/images/${name}/${color}/${i}.png`} layout='fill' objectFit="contain" alt={name} className="center"/>
         </div>);
       }
       return content;
     };
 
     const getAllPhotos = (model) => {
-      let colorData = [];
-      switch(model) {
-        case "airconic" : 
-        colorData = [
-          {
-            "color":"red", 
-            "number": 7
-          },
-          {
-            "color":"grey", 
-            "number": 5
-          },
-          {
-            "color":"black", 
-            "number": 6
-          }
-        ];
-        break;
-        case "enwrap" : 
-        colorData = [
-          {
-            "color":"black", 
-            "number": 6
-          },
-          {
-            "color":"silver", 
-            "number": 5
-          }
-        ];
-        break;
-        case "falcon": 
-        colorData = [
-          {
-            "color":"blue", 
-            "number": 6
-          },
-          {
-            "color":"red", 
-            "number": 6
-          }
-        ];
-        break;
-        case "kross": 
-        colorData = [
-          {
-            "color":"spring green", 
-            "number": 4
-          },
-          {
-            "color":"formula red", 
-            "number": 2
-          },
-          {
-            "color":"dark slate", 
-            "number": 4
-          },
-          {
-            "color":"dark red", 
-            "number": 4
-          }
-        ]
-        break;
-        case "majoris": 
-        colorData = [
-          {
-            "color":"black", 
-            "number": 6
-          },
-          {
-            "color":"blue", 
-            "number": 6
-          },
-          {
-            "color":"coral", 
-            "number": 6
-          }
-        ];
-        break;
-        case "zakk":
-          colorData = [
-            {
-              "color":"coral blue", 
-              "number": 3
-            },
-            {
-              "color":"black", 
-              "number": 8
-            },
-            {
-              "color":"red", 
-              "number": 7
-            }
-          ]
-        default:
-          getPhotosForColor("", 0);
-      }
+      let colorData = model.colorData;
       let content = [];
       colorData.map((data) => {
         content.push(
             <div className="block mx-auto bg-white bg-opacity-70 rounded-3xl max-w-xs text-black my-8 border-solid border-4 border-black shadow-2xl">
-              <h2 className="text-center text-3xl capitalize my-5 p-5">{modelName} {data.color}</h2>
+              <h2 className="text-center text-3xl capitalize my-5 p-5">{name} {data.color}</h2>
               <Slider {...settings}>
                 {getPhotosForColor(data.color, data.number)}
               </Slider>
@@ -138,7 +44,7 @@ export default function CardSlider(props) {
     }
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-        {getAllPhotos(modelName)}
+        { getAllPhotos(model) }
       </div>   
     );
 }

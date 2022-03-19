@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import ProductDisplay from '../../components/ProductDisplay';
 
-const Catalogue = (props) => {
+const Catalogue = () => {
 
-    const [models, setModels] = useState(props.models)
+    const [models, setModels] = useState([]);
+
+    useEffect(() => {
+        fetch(`/api/getModels`)
+        .then((res) => res.json())
+        .then((modelsResponse) => {
+            setModels(modelsResponse);
+        });
+    }, []);
+
     return (<>
         <h2 className='text-xl text-center pt-12 font-mono'>Click on the model you like to know more...</h2>
         <ProductDisplay models={models} brand="amt" brandName="American Tourister"/>
@@ -12,15 +21,6 @@ const Catalogue = (props) => {
         <br/>
         <ProductDisplay models={models} brand="sam" brandName="Samsonite"/>
     </>);
-};
-
-export async function getServerSideProps(context) {
-    let data = await fetch(`https://ksaworld.in/api/models`);
-    let models = await data.json();
-
-    return {
-        props: {models}
-    }
 };
 
 export default Catalogue;
